@@ -33,7 +33,7 @@ const addCategory = async (req, res) => {
 };
 
 
-//----------------- This is get request to get all the categoryes --------------//
+//----------------- This is get request to get all the categorys --------------//
 
 const getCategory = async (req, res) => {
   try {

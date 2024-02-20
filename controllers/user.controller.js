@@ -3,7 +3,7 @@ const { userService } = require("../services");
 
 
 
-//----------------- This is add request to add new user ---------------//
+//----------------- add request to add new user ---------------//
 
 const addUser = async (req, res) => {
   try {
@@ -11,7 +11,7 @@ const addUser = async (req, res) => {
 
     const body = req.body;
 
-    //-------------- userExist will check this email was registerd or not ------------------//
+    //-------------- userExist to check email was registerd or not ------------------//
 
     const userExist = await userService.userExist(body.email);
 
@@ -36,7 +36,7 @@ const addUser = async (req, res) => {
 
 
 
-//----------------- This is get request to get all the user ---------------//
+//----------------- get request to get all the user ---------------//
 
 const getUser = async (req, res) => {
   try {
@@ -55,7 +55,7 @@ const getUser = async (req, res) => {
 
 
 
-//----------------- This is delete request to delete the user ---------------//
+//----------------- delete request to delete the user ---------------//
 
 const deleteUser = async (req, res) => {
   try {
@@ -78,7 +78,7 @@ const deleteUser = async (req, res) => {
 
 
 
-//----------------- This is update request to edit user data user ---------------//
+//----------------- update request to edit user data user ---------------//
 
 const updateUser = async (req, res) => {
   try {
@@ -103,7 +103,7 @@ const updateUser = async (req, res) => {
 
 
 
-//----------------- This is login request will check this user exist or not and create jwt(json-web-token) ---------------//
+//----------------- loginUser to login user and create jwt(json-web-token) ---------------//
 
 const loginUser = async (req, res) => {
   try {
@@ -146,7 +146,7 @@ const loginUser = async (req, res) => {
 
 
 
-//----------------- This is getprofile request for only user , means admin not allow(only user can make this request and see output) ---------------//
+//----------------- getprofile only for user's , means admin can not allow(only user can access this) ---------------//
 
 const getProfile = (req, res) => {
   const user = req.user;

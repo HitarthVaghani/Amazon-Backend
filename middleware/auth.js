@@ -1,8 +1,15 @@
 const jwt = require("jsonwebtoken");
 
+
+//----------------- login JWT creator ---------------//
+
 const createToken = (data) => {
   return jwt.sign(data, process.env.SECRET);
 };
+
+
+
+//----------------- login authenticator ---------------//
 
 const authenticate = (req, res, next) => {
   const token = req.cookies["token"];
@@ -23,6 +30,10 @@ const authenticate = (req, res, next) => {
     next();
   }
 };
+
+
+
+//----------------- retrictor for unauthorized request's  ---------------//
 
 const restrict = (...data) => {
   return (req, res, next) => {

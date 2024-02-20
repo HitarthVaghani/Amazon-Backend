@@ -9,18 +9,19 @@ const cookieParser = require("cookie-parser");
 
 const app = express();
 
+//------------- to add cookies -------------//
 app.use(cookieParser());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// routes connection
+//------------- routes connection -------------//
 app.use("/v1", routes);
 
-// database connection
+//------------- database connection -------------//
 connectDB();
 
-// server connection
+//------------- server connection -------------//
 http.createServer(app).listen(process.env.PORT, () => {
   console.log("server started");
 });

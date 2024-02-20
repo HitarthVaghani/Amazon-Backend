@@ -5,7 +5,7 @@ const route = express.Router();
 
 
 
-//----------------- user POST, GET, DELETE, PUT route ---------------//
+//----------------- category POST, GET, DELETE, PUT route ---------------//
 
 route.post("/add", categoryController.addCategory);
 route.get("/get", categoryController.getCategory);

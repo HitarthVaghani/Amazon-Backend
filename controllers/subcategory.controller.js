@@ -1,7 +1,7 @@
 const { subcategoryService } = require("../services");
 
 
-//----------------- This is add request to add new subcategory ---------------//
+//----------------- add request to add new subcategory ---------------//
 
 const addSubcategory = async (req, res) => {
   try {
@@ -23,7 +23,7 @@ const addSubcategory = async (req, res) => {
 };
 
 
-//----------------- This is get request to get all the subcategorys ---------------//
+//----------------- get request to get all the subcategorys ---------------//
 
 const getSubcategory = async (req, res) => {
   try {
@@ -41,7 +41,7 @@ const getSubcategory = async (req, res) => {
 };
 
 
-//----------------- This is delete request to delete subcategory ---------------//
+//----------------- delete request to delete subcategory ---------------//
 
 const deleteSubcategory = async (req, res) => {
   try {
@@ -64,7 +64,7 @@ const deleteSubcategory = async (req, res) => {
 
 
 
-//----------------- This is update request to edit subcategory ---------------//
+//----------------- update request to edit subcategory ---------------//
 
 const updateSubcategory = async (req, res) => {
   try {

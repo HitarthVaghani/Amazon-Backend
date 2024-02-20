@@ -1,7 +1,7 @@
 const { categoryService } = require("../services");
 
 
-//----------------- This is add request to add new category ---------------//
+//----------------- add request to add new category ---------------//
 
 const addCategory = async (req, res) => {
   try {
@@ -33,7 +33,7 @@ const addCategory = async (req, res) => {
 };
 
 
-//----------------- This is get request to get all the categorys --------------//
+//----------------- get request to get all the categorys --------------//
 
 const getCategory = async (req, res) => {
   try {
@@ -51,7 +51,7 @@ const getCategory = async (req, res) => {
 };
 
 
-//----------------- This is delete request to delete the category ---------------//
+//----------------- delete request to delete the category ---------------//
 
 
 const deleteCategory = async (req, res) => {
@@ -75,7 +75,7 @@ const deleteCategory = async (req, res) => {
 
 
 
-//----------------- This is update request to edit the category ---------------//
+//----------------- update request to edit the category ---------------//
 
 const updateCategory = async (req, res) => {
   try {

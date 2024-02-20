@@ -4,6 +4,10 @@ const { authenticate, restrict } = require("../middleware/auth");
 
 const route = express.Router();
 
+
+
+//----------------- user POST, GET, DELETE, PUT route ---------------//
+
 route.post("/register", userController.addUser);
 route.post("/login", userController.loginUser);
 route.get("/get", userController.getUser);
